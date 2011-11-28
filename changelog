@@ -1,3 +1,159 @@
+openstackx (0.2.0+201111281909-0mit1~11.gbp53fd61) oneiric; urgency=low
+
+  ** SNAPSHOT build @53fd616966acb4d2d0f28a382616a05460440b81 **
+
+  [ Vishvananda Ishaya ]
+  * [5f2fadd1] pass self to OverrideHelper
+  * [ac021af2] switch deserialization
+  * [3dab054b] removed extras.py
+  * [0340f5f6] remove extra body
+
+  [ Anthony Young ]
+  * [73009cd6] more syspanel shit
+
+  [ Vishvananda Ishaya ]
+  * [1e07edef] fix for launch instance href
+
+  [ termie ]
+  * [05ff3b32] fix dependencies
+  * [5005fe1c] dependencies are dumb anyway
+
+  [ Anthony Young ]
+  * [8bc332a6] fix image launching - now expects image object from glance
+  * [0e303603] if we already have a date, don't reparse
+  * [cdc606a0] add a haskey call to base.py
+  * [e7178350] add to_dict resource interface
+  * [c5e895d9] no params for to_dict
+  * [fbdf6c8b] add role_refs.py
+  * [ae41d4a3] try to fix odd differences in sqlite/mysql behavior
+  * [c141f083] add security groups
+  * [17bd2360] typo in uptime calculation
+  * [71278923] fix aggregate usage reporting
+  * [d139ccbd] remove typo
+  * [f68580df] fix /user_data key injection
+  * [44782ef4] add in user_data
+  * [52b8d5dd] build changes
+  * [fb83e19e] handle missing instance types
+  * [84d5ca68] progress on cpu_info
+  * [23a37f63] base64 encode user data
+  * [31ee09ee] fix for issue #4 reported by mgius
+  * [7fe2e365] make cpu/ram/disk available through api
+  * [518589ad] preliminary snapshot support - need to fix glance so that snapshots work as expected
+
+  [ Jake Dahn ]
+  * [620c8e0d] quotas extension with get and update mostly working
+  * [71c68b48] client now calls projects by the name of tenants
+  * [33a3a9c7] now passing kwargs directly into body, instead of copying contents into a new dict
+  * [17e1f64a] updating quotas now works
+
+  [ Anthony Young ]
+  * [e0132fed] modify update call to accomodate refactored code in nova.  now _validate_server_name is in a helper
+
+  [ Jake Dahn ]
+  * [774fc1a5] worked mostly on renaming things and getting index working
+  * [e5d31212] quotas index now works
+  * [396b2bdf] get/show now makes use of format_quota_set
+  * [39065879] changing typo
+  * [1cf5f5a0] renaming tenantId
+  * [a6e273cc] making client call id instead of tenantId
+  * [8bebfb08] body now filters out empty keys before sending to the api
+  * [7fe957cd] cleaning up the naming of things
+  * [b3737c90] changing endpoint to be named quota_sets
+  * [27558bdb] killing the none filter in quota admin api
+  * [dfd6f11e] changing endpoint method for quotas to quota_sets
+  * [8b19570c] added default quotas to list with a param of defaults
+
+  [ aababilov ]
+  * [8ca8e2e0] Implement method returning info about a single service
+  * [d0b2f15b] Return info about nova-compute if no nodes are available
+
+  [ Anthony Young ]
+  * [65ef3df8] fixes to make image launching work against trunk
+
+  [ Mark Gius ]
+  * [e4c0377d] Adding method to update user-enabled or not
+
+  [ Anthony Young ]
+  * [ad160340] fixes for compatibility with nova trunk.  reworked extras/servers/index to be less dependent on impl details of the servers api
+  * [69b6f2ee] need to set is_detail=True flag to get the info required for dash listings
+  * [14fa24a0] change to match recent changes to nova snapshot api
+  * [0e974d77] snapshot parameter not needed
+  * [dff642b4] initial commit of security group api support
+  * [f0097d31] clients for security groups
+
+  [ Vishvananda Ishaya ]
+  * [04b87ded] get rid of key pairs from auth manager
+
+  [ Anthony Young ]
+  * [c186595d] add tenant_id to server.attrs
+  * [2b7d4130] server.tenant_id = instance.project_id
+  * [e4553fca] add an extras.servers.get method
+  * [3f0a3bcb] add missing import
+  * [721f8fe4] when admin lists instances in user dash, only show admin instances
+  * [b85b60e2] name changes, and also hook up client
+  * [b1132660] should not need elevated contexts now that we got keystone working
+
+  [ aababilov ]
+  * [fc3c3514] Implement endpoint api
+  * [ea083666] Improve role refs management
+
+  [ Nikolay Sokolov ]
+  * [7afd7dda] project.scrub added
+  * [d50f6fba] pep8
+
+  [ Anthony Young ]
+  * [46dc4234] don't show all groups for admin
+
+  [ Carlo Truijllo ]
+  * [17163667] kludge to have updated version of extensions working with different version of nova
+
+  [ Vishvananda Ishaya ]
+  * [81218bcf] fix typo in admin.py
+
+  [ Nikolay Sokolov ]
+  * [5a73837b] Network control POC, network disassociation
+  * [416287a3] Deleted old implementation in ProjectManager
+
+  [ Jesse Andrews ]
+  * [b89fd6fd] Edited README.rst via GitHub
+
+  [ Anthony Young ]
+  * [788f3115] fix bug in api compatibility kludge
+  * [d3a59636] rework kludge to not surpress exceptions
+
+  [ Jesse Andrews ]
+  * [9c652fc8] memo-ize flavors in usage calculation
+
+  [ Arvind Somya ]
+  * [bf9eee94] Adding virtual interfaces per instance to extras
+
+  [ Anthony Young ]
+  * [0df7d2b6] changes to make openstackx work with d4 trunk
+  * [d34cc494] remove tenant_id, as that will be added by keystone
+  * [dc471044] state_description has been removed from nova trunk
+  * [5fb2ee08] make images launch with trunk - trunk nova should support most of the features we need for servers.create at this point, so should switch dashboard over to using the built-in api
+  * [5118104d] fix token create params to match new keystone - this change will need to be ported to novaclient
+
+  [ Nachi Ueno ]
+  * [5cb55fe9] Fix roleRefs to roles
+
+  [ Anthony Young ]
+  * [30339623] fixes to make dashboard work with diablo and the latest keystone
+  * [b3481d2f] get_for_tenant is a list call
+  * [75b15633] create capability to retrieve roles using keystone extension
+  * [4a060d51] change to match most recent changes to keystone api
+
+  [ Jake Dahn ]
+  * [27f4012b] adding tenant name to update method
+  * [d9dc0a06] maing name optional
+
+  [ Anthony Young ]
+  * [53fd6169] fix typo for issue #21.
+
+  [ Managed I.T. CI ]
+
+ -- Managed I.T. CI <ci@managedit.ie>  Mon, 28 Nov 2011 19:10:00 +0000
+
 openstackx (0.2.0~20111021-0mit5) oneiric; urgency=low
 
   * Add python-setuptools build dep
@@ -28,7 +184,7 @@ openstackx (0.2.0~20111021-0mit1) oneiric; urgency=low
 
  -- Kiall Mac Innes <kiall@managedit.ie>  Fri, 21 Oct 2011 21:31:38 +0100
 
-openstackx (0.2.0) UNRELEASED; urgency=low
+openstackx (0.2.0) oneiric; urgency=low
 
   * Initial release. (Closes: #XXXXXX)
 
