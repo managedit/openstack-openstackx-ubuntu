@@ -1,4 +1,4 @@
-openstackx (0.2.0+20111130~1909-0mit1~19.gbp53fd61) oneiric; urgency=high
+openstackx (0.2+20111130~1909-0mit1~19.gbp53fd61) oneiric; urgency=high
 
   ** SNAPSHOT build @53fd616966acb4d2d0f28a382616a05460440b81 **
 
@@ -6,7 +6,7 @@ openstackx (0.2.0+20111130~1909-0mit1~19.gbp53fd61) oneiric; urgency=high
 
  -- Managed I.T. CI <ci@managedit.ie>  Tue, 29 Nov 2011 19:09:27 +0000
 
-openstackx (0.2.0+20111128-0mit1~18.gbp53fd61) oneiric; urgency=high
+openstackx (0.2+20111128-0mit1~18.gbp53fd61) oneiric; urgency=high
 
   ** SNAPSHOT build @53fd616966acb4d2d0f28a382616a05460440b81 **
 
@@ -14,7 +14,7 @@ openstackx (0.2.0+20111128-0mit1~18.gbp53fd61) oneiric; urgency=high
 
  -- Managed I.T. CI <ci@managedit.ie>  Mon, 28 Nov 2011 20:34:54 +0000
 
-openstackx (0.2.0+20111128-0mit1~17.gbp53fd61) oneiric; urgency=high
+openstackx (0.2+20111128-0mit1~17.gbp53fd61) oneiric; urgency=high
 
   ** SNAPSHOT build @53fd616966acb4d2d0f28a382616a05460440b81 **
 
@@ -22,7 +22,7 @@ openstackx (0.2.0+20111128-0mit1~17.gbp53fd61) oneiric; urgency=high
 
  -- Managed I.T. CI <ci@managedit.ie>  Mon, 28 Nov 2011 19:39:18 +0000
 
-openstackx (0.2.0+20111128-0mit1~12.gbp53fd61) oneiric; urgency=high
+openstackx (0.2+20111128-0mit1~12.gbp53fd61) oneiric; urgency=high
 
   ** SNAPSHOT build @53fd616966acb4d2d0f28a382616a05460440b81 **
 
@@ -30,7 +30,7 @@ openstackx (0.2.0+20111128-0mit1~12.gbp53fd61) oneiric; urgency=high
 
  -- Managed I.T. CI <ci@managedit.ie>  Mon, 28 Nov 2011 19:15:51 +0000
 
-openstackx (0.2.0+201111281909-0mit1~11.gbp53fd61) oneiric; urgency=high
+openstackx (0.2+201111281909-0mit1~11.gbp53fd61) oneiric; urgency=high
 
   ** SNAPSHOT build @53fd616966acb4d2d0f28a382616a05460440b81 **
 
@@ -186,37 +186,37 @@ openstackx (0.2.0+201111281909-0mit1~11.gbp53fd61) oneiric; urgency=high
 
  -- Managed I.T. CI <ci@managedit.ie>  Mon, 28 Nov 2011 19:10:00 +0000
 
-openstackx (0.2.0~20111021-0mit5) oneiric; urgency=high
+openstackx (0.2~20111021-0mit5) oneiric; urgency=high
 
   * Add python-setuptools build dep
 
  -- Kiall Mac Innes <kiall@managedit.ie>  Sun, 23 Oct 2011 11:04:20 +0100
 
-openstackx (0.2.0~20111021-0mit4) oneiric; urgency=high
+openstackx (0.2~20111021-0mit4) oneiric; urgency=high
 
   * Bump version for PPA rebuild.
 
  -- Kiall Mac Innes <kiall@managedit.ie>  Sat, 22 Oct 2011 06:56:29 +0100
 
-openstackx (0.2.0~20111021-0mit3) oneiric; urgency=high
+openstackx (0.2~20111021-0mit3) oneiric; urgency=high
 
   * Fixed nova-compute dep
 
  -- Kiall Mac Innes <kiall@managedit.ie>  Fri, 21 Oct 2011 22:19:16 +0100
 
-openstackx (0.2.0~20111021-0mit2) oneiric; urgency=high
+openstackx (0.2~20111021-0mit2) oneiric; urgency=high
 
   * Fixed maintainer for PPA
 
  -- Kiall Mac Innes <kiall@managedit.ie>  Fri, 21 Oct 2011 21:48:06 +0100
 
-openstackx (0.2.0~20111021-0mit1) oneiric; urgency=high
+openstackx (0.2~20111021-0mit1) oneiric; urgency=high
 
   * New upstream release (53fd616966acb4d2d0f28a382616a05460440b81)
 
  -- Kiall Mac Innes <kiall@managedit.ie>  Fri, 21 Oct 2011 21:31:38 +0100
 
-openstackx (0.2.0) oneiric; urgency=high
+openstackx (0.2) oneiric; urgency=high
 
   * Initial release. (Closes: #XXXXXX)
 
