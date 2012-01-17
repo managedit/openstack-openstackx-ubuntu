@@ -1,3 +1,11 @@
+openstackx (0.2+20120117~1437-0mit1~25.gbp53fd61) oneiric; urgency=medium
+
+  ** SNAPSHOT build @53fd616966acb4d2d0f28a382616a05460440b81 **
+
+  * UNRELEASED
+
+ -- Managed I.T. CI <ci@managedit.ie>  Tue, 17 Jan 2012 14:37:46 +0000
+
 openstackx (0.2+20111130~1909-0mit1~19.gbp53fd61) oneiric; urgency=high
 
   ** SNAPSHOT build @53fd616966acb4d2d0f28a382616a05460440b81 **
